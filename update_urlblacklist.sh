@@ -30,6 +30,7 @@ UPDATE() {
          find $bDir -type f -print0 | xargs -0 chmod 664
       else
          echo "--> Erro ao descompactar o arquivo ${FILE_SAVE}"
+         rm -r "${FILE_SAVE}"
       fi
    else
       echo "--> Erro ao realizar o download do arquivo ${FILE_SAVE}"
