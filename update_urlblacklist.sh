@@ -1,4 +1,7 @@
 #!/bin/bash
+#
+# Este script tem por objetivo checar periodicamente as atualizações disponíveis das listas
+# negras da URL http://urlblacklist.com e atualizar os arquivos locais.
 
 # --> URL de teste
 #URL="http://urlblacklist.com/cgi-bin/commercialdownload.pl?type=download&file=smalltestlist"
