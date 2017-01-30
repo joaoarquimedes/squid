@@ -18,7 +18,7 @@ UPDATE() {
    if [[ $? -eq 0 ]]
    then
       echo "--> Arquivo ${FILE_SAVE} salvo, descompactando."
-      tar -zxf $FILE_SAVE
+      tar -zxf $FILE_SAVE > /dev/null 2> /dev/null
       if [[ $? -eq 0 ]]
       then
          echo "--> Arquivo descompactado, removendo download ${FILE_SAVE}"
