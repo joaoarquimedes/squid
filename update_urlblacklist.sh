@@ -32,6 +32,7 @@ UPDATE() {
 
       bDir="blacklists/"
       echo "$(DATESTAMP) --> Limpando diretório $bDir"
+      rm -rf /tmp/$bDir
       mv $bDir /tmp/
 
       echo "$(DATESTAMP) --> Arquivo ${FILE_SAVE} salvo, descompactando."
